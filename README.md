@@ -6,3 +6,9 @@ the data was randomly split into training (70% of the observations) and test dat
 The least angle regression algorithm with k=10 fold cross validation was used to estimate the lasso regression model in the training set, and the model was validated using the test set.
 The change in the cross validation average (mean) squared error at each step was used to identify the best subset of predictor variables
 
+![2w](https://user-images.githubusercontent.com/18068773/37523605-c25b1240-2927-11e8-84e2-adf1a9f3c13c.png)
+
+This plot shows the change in the mean squared error while the change in the penalty parameter at each step of the selection process
+It decreases rapidly at first and then stabilize at point where adding more predictors to the model wouldn’t decrease the mean squared error.
+
+
